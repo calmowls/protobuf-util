@@ -1,2 +1,2 @@
 # protobuf-util
-Protobuf converters
+Protobuf converters.
