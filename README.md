@@ -1,17 +1,27 @@
 # protobuf-util
 Protobuf converters.
-## How to use
+## Usage
+
 Convert protobuf to plain object.
+```java
 MyObj.Builder builder = MyObj.newBuilder();
 //Set any values in protobuf object
 MyObjModel model =  ProtobufConverter.toPlainObject(builder.build(), MyObjModel.class);
+```
 
-It's supporting:
-Protobuf to POJO
+Protobuf to POJO.
+```java
 ProtobufConverter.toPlainObject(T proto, Class<E> pojo)
-POJO to Protobuf
+```
+POJO to Protobuf.
+```java
 PlainObjectConverter.toProtobuf(E pojo, Class<T> proto)
-Protobuf to Map
+```
+Protobuf to Map.
+```java
 ProtobufConverter.toMap(T proto, Class<E> pojo)
+```
 Map to Protobuf
+```java
 MapConverter.toProtobuf(E map, Class<T> proto)
+```
